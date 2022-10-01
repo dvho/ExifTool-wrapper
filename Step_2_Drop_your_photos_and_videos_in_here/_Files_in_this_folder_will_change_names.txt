@@ -1,0 +1,1 @@
+This dummy file must remain in this folder or else git will automatically ignore this otherwise empty folder
