@@ -58,6 +58,8 @@ do
 
             ../Step_1_Dont_modify_this_folder/exiftool -if '$filetype eq "PNG"' -d '%Y-%m-%d---%H.%M.%S__%%f%%-c.%%e' '-filename<FileModifyDate' $SELECTION_03
 
+            ../Step_1_Dont_modify_this_folder/exiftool -if '$filetype eq "HEIC"' -d '%Y-%m-%d---%H.%M.%S__%%f%%-c.%%e' '-filename<FileModifyDate' $SELECTION_03            
+
             break
             ;;
         "Revert back a file name that changed in the folder")
@@ -92,6 +94,8 @@ do
             ../Step_1_Dont_modify_this_folder/exiftool -if '$filetype eq "JPEG"' -d '%Y-%m-%d---%H.%M.%S__%%f%%-c.%%e' '-filename<DateTimeOriginal' *
 
             ../Step_1_Dont_modify_this_folder/exiftool -if '$filetype eq "PNG"' -d '%Y-%m-%d---%H.%M.%S__%%f%%-c.%%e' '-filename<FileModifyDate' *
+
+            ../Step_1_Dont_modify_this_folder/exiftool -if '$filetype eq "HEIC"' -d '%Y-%m-%d---%H.%M.%S__%%f%%-c.%%e' '-filename<FileModifyDate' *
 
             break
             ;;
